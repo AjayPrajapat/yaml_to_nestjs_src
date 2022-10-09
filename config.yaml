@@ -1,0 +1,108 @@
+
+module:
+  name: cv-build
+  controller:
+    cv: 
+      
+    profile: crud
+    portfolio: crud
+    template: crud
+    user-settings: crud
+
+schema:
+  cv:
+    cvId: number
+    cvTemplateId: 
+      type: ObjectId
+      ref: CVTemplate
+      require: false
+      default: ''
+
+    vCardId:
+      type: ObjectId
+      ref: VCard
+      require: true
+      default: ''
+
+    profileId: 
+      type: ObjectId
+      ref: profile
+      require: true
+      default: null
+
+  profile:
+    cvId: number
+    cvTemplateId: 
+      type: ObjectId
+      ref: CVTemplate
+      require: false
+      default: ''
+
+    vCardId:
+      type: ObjectId
+      ref: VCard
+      require: true
+      default: ''
+
+    profileId: 
+      type: ObjectId
+      ref: profile
+      require: true
+      default: null
+  portfolio:
+    cvId: number
+    cvTemplateId: 
+      type: ObjectId
+      ref: CVTemplate
+      require: false
+      default: ''
+
+    vCardId:
+      type: ObjectId
+      ref: VCard
+      require: true
+      default: ''
+
+    profileId: 
+      type: ObjectId
+      ref: profile
+      require: true
+      default: null
+  template:
+    cvId: number
+    cvTemplateId: 
+      type: ObjectId
+      ref: CVTemplate
+      require: false
+      default: ''
+
+    vCardId:
+      type: ObjectId
+      ref: VCard
+      require: true
+      default: ''
+
+    profileId: 
+      type: ObjectId
+      ref: profile
+      require: true
+      default: null
+  user-settings:
+    cvId: number
+    cvTemplateId: 
+      type: ObjectId
+      ref: CVTemplate
+      require: false
+      default: ''
+
+    vCardId:
+      type: ObjectId
+      ref: VCard
+      require: true
+      default: ''
+
+    profileId: 
+      type: ObjectId
+      ref: profile
+      require: true
+      default: null

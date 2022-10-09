@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "case": "^1.6.3",
+    "js-yaml": "^4.1.0",
+    "pluralize": "^8.0.0",
+    "prettier": "^2.7.1",
+    "prettier-format": "^3.1.0"
+  }
+}
